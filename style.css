@@ -6,8 +6,10 @@ body {
   padding: 0;
   margin: 0;
   display: flex;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
+  font-size: 1em;
   font-family: "Open Sans", sans-serif;
 }
 a {
@@ -16,4 +18,110 @@ a {
 }
 li {
   padding-left: 0;
+}
+button {
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+  color: inherit;
+}
+.container {
+  width: 90%;
+  display: flex;
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  z-index: 99;
+}
+.header-container {
+  padding: 16px 0;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.title_logo {
+  margin: 0;
+  font-size: 125%;
+  margin-left: 8px;
+  color: white;
+  font-weight: 600;
+  line-height: normal;
+}
+nav {
+  width: 45%;
+  display: flex;
+  align-items: center;
+}
+.nav-content {
+  width: 100%;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+}
+.nav-btn {
+  font-size: 100%;
+  font-weight: 400;
+  line-height: normal;
+}
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.banner {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 350px;
+  color: white;
+  background-color: #2f6b4f;
+  display: flex;
+  justify-content: center;
+}
+.banner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.title_banner {
+  max-width: 80%;
+  font-size: 370%;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 32px;
+}
+.paragraph_banner {
+  max-width: 60%;
+  margin-bottom: 40px;
+  font-weight: 400;
+  line-height: normal;
+}
+.btn_banner {
+  background-color: white;
+  color: black;
+  padding: 18px 30px;
+  font-size: 100%;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.line {
+  position: absolute;
+  padding: 20px;
+  transform: rotate(60deg);
+  overflow: hidden;
+  border: 2px solid red;
+  height: 100%;
+  background: linear-gradient(#d9d9d9, #d9d9d900);
 }
