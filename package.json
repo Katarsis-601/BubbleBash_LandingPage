@@ -5,16 +5,18 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack --config ./webpack.dev.js",
-    "production": "webpack --config ./webpack-prod.js",
+    "production": "webpack --config ./webpack.prod.js",
     "serve": "lite-server --baseDir='./dist'",
-    "build": "npm run dev & npm run serve"
+    "build": "npm run serve & npm run dev"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^6.8.1",
+    "css-minimizer-webpack-plugin": "^5.0.1",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.3",
+    "mini-css-extract-plugin": "^2.7.6",
     "style-loader": "^3.3.3",
     "webpack": "^5.88.1",
     "webpack-cli": "^5.1.4",

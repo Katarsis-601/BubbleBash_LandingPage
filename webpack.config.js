@@ -1,11 +1,23 @@
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
-const path = require("path")
+const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 
 module.exports = {
     entry: "./src/index.js",
-    module: {
-        rules: [{ test: /.css$/, use: ["style-loader", "css-loader"] },
-        { test: /.(png|svg|jpg|jpeg)$/i, use: { loader: "file-loader" } }]
+    output: {
+        assetModuleFilename: "images/[name][ext]",
+        clean: true
     },
-    plugins: [new HtmlWebpackPlugin({ template: "./index.html" })]
+    module: {
+        rules: [{ test: /.css$/, use: [MiniCssExtractPlugin.loader, "css-loader"] },
+        { test: /.(png|svg|jpg|jpeg)$/i, type: "asset/resource" }]
+    },
+    optimization: {
+        minimizer: [new CssMinimizerPlugin]
+    },
+    plugins: [new MiniCssExtractPlugin({
+        filename: "[name].css",
+        chunkFilename: "[id].css"
+    }), new HtmlWebpackPlugin({ template: "./index.html" })]
+
 }
