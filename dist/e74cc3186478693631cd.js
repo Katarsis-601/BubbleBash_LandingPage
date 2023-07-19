@@ -29,6 +29,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _asset_ServicesEditing_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../asset/ServicesEditing.svg */ "./asset/ServicesEditing.svg");
 /* harmony import */ var _asset_ServicesMedium_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../asset/ServicesMedium.svg */ "./asset/ServicesMedium.svg");
 /* harmony import */ var _asset_ServicesPen_svg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../asset/ServicesPen.svg */ "./asset/ServicesPen.svg");
+/* harmony import */ var _asset_ProjectPicture_1_svg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../asset/ProjectPicture-1.svg */ "./asset/ProjectPicture-1.svg");
+/* harmony import */ var _asset_ProjectPicture_2_svg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../asset/ProjectPicture-2.svg */ "./asset/ProjectPicture-2.svg");
+/* harmony import */ var _asset_ProjectPicture_3_svg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../asset/ProjectPicture-3.svg */ "./asset/ProjectPicture-3.svg");
+/* harmony import */ var _asset_ProfilePicture_1_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../asset/ProfilePicture-1.png */ "./asset/ProfilePicture-1.png");
+/* harmony import */ var _asset_ProfilePicture_2_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../asset/ProfilePicture-2.png */ "./asset/ProfilePicture-2.png");
+/* harmony import */ var _asset_ProfilePicture_3_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../asset/ProfilePicture-3.png */ "./asset/ProfilePicture-3.png");
 //logo header
 
 //image banner
@@ -38,6 +44,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+//load project image
+
+
+
+//load profile image
 
 
 
@@ -61,7 +74,16 @@ load_img("card-services_image", _asset_ServicesBranding_svg__WEBPACK_IMPORTED_MO
 load_img("card-services_image", _asset_ServicesEditing_svg__WEBPACK_IMPORTED_MODULE_5__, 4, "CameraIcon")
 load_img("card-services_image", _asset_ServicesPen_svg__WEBPACK_IMPORTED_MODULE_7__, 5, "PenIcon")
 
+//project image
+load_img("portofolio-card_image", _asset_ProjectPicture_1_svg__WEBPACK_IMPORTED_MODULE_8__, 0, "ProjectPicture_1")
+load_img("portofolio-card_image", _asset_ProjectPicture_2_svg__WEBPACK_IMPORTED_MODULE_9__, 1, "ProjectPicture_2")
+load_img("portofolio-card_image", _asset_ProjectPicture_3_svg__WEBPACK_IMPORTED_MODULE_10__, 2, "ProjectPicture_3")
 
+//profile image
+
+load_img("profile-img", _asset_ProfilePicture_1_png__WEBPACK_IMPORTED_MODULE_11__, 0, "Profile Picture 1")
+load_img("profile-img", _asset_ProfilePicture_2_png__WEBPACK_IMPORTED_MODULE_12__, 1, "Profile Picture 2")
+load_img("profile-img", _asset_ProfilePicture_3_png__WEBPACK_IMPORTED_MODULE_13__, 2, "Profile Picture 3")
 
 /***/ }),
 
@@ -82,6 +104,66 @@ module.exports = __webpack_require__.p + "images/BannerPicture.svg";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "images/Logo .svg";
+
+/***/ }),
+
+/***/ "./asset/ProfilePicture-1.png":
+/*!************************************!*\
+  !*** ./asset/ProfilePicture-1.png ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "images/ProfilePicture-1.png";
+
+/***/ }),
+
+/***/ "./asset/ProfilePicture-2.png":
+/*!************************************!*\
+  !*** ./asset/ProfilePicture-2.png ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "images/ProfilePicture-2.png";
+
+/***/ }),
+
+/***/ "./asset/ProfilePicture-3.png":
+/*!************************************!*\
+  !*** ./asset/ProfilePicture-3.png ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "images/ProfilePicture-3.png";
+
+/***/ }),
+
+/***/ "./asset/ProjectPicture-1.svg":
+/*!************************************!*\
+  !*** ./asset/ProjectPicture-1.svg ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "images/ProjectPicture-1.svg";
+
+/***/ }),
+
+/***/ "./asset/ProjectPicture-2.svg":
+/*!************************************!*\
+  !*** ./asset/ProjectPicture-2.svg ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "images/ProjectPicture-2.svg";
+
+/***/ }),
+
+/***/ "./asset/ProjectPicture-3.svg":
+/*!************************************!*\
+  !*** ./asset/ProjectPicture-3.svg ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "images/ProjectPicture-3.svg";
 
 /***/ }),
 
