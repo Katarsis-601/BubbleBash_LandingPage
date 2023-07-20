@@ -17,9 +17,13 @@ import ProjectPicture_3 from "../asset/ProjectPicture-3.svg"
 import Profile_1 from "../asset/ProfilePicture-1.png"
 import Profile_2 from "../asset/ProfilePicture-2.png"
 import Profile_3 from "../asset/ProfilePicture-3.png"
-function load_img(classname, img_name, order = 0, alt = false) {
+
+function load_img(classname, img_name, order = 0, alt = false, size = false) {
     if (alt) {
         document.getElementsByClassName(classname)[order].src = alt
+    }
+    if (size) {
+        document.getElementsByClassName(classname)[order].width = size
     }
     return document.getElementsByClassName(classname)[order].src = img_name
 }

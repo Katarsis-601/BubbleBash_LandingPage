@@ -2,10 +2,22 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./style.css":
-/*!*******************!*\
-  !*** ./style.css ***!
-  \*******************/
+/***/ "./css/style.css":
+/*!***********************!*\
+  !*** ./css/style.css ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./css/text-style.css":
+/*!****************************!*\
+  !*** ./css/text-style.css ***!
+  \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -54,9 +66,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function load_img(classname, img_name, order = 0, alt = false) {
+
+function load_img(classname, img_name, order = 0, alt = false, size = false) {
     if (alt) {
         document.getElementsByClassName(classname)[order].src = alt
+    }
+    if (size) {
+        document.getElementsByClassName(classname)[order].width = size
     }
     return document.getElementsByClassName(classname)[order].src = img_name
 }
@@ -308,8 +324,9 @@ var __webpack_exports__ = {};
   !*** ./src/index.js ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../style.css */ "./style.css");
-/* harmony import */ var _load_img_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./load_img.js */ "./src/load_img.js");
+/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/style.css */ "./css/style.css");
+/* harmony import */ var _css_text_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/text-style.css */ "./css/text-style.css");
+/* harmony import */ var _load_img_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./load_img.js */ "./src/load_img.js");
 
 
 

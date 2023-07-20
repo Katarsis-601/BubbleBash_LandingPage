@@ -6,7 +6,7 @@ module.exports = merge(config, {
     watch: true,
     output: {
         path: path.resolve(__dirname, "dist"),
-        filename: "[hash].js"
+        filename: "[name].js"
     },
     devtool: false,
     mode: "development",

@@ -1,0 +1,16 @@
+.content-title {
+  color: var(--black, #2a2c3d);
+  font-size: 120%;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+.content-text {
+  color: #2a2c3d;
+  margin: 0;
+  font-size: 225%;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
