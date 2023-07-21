@@ -1,5 +1,4 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./css/style.css":
@@ -8,6 +7,7 @@
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
@@ -20,8 +20,19 @@ __webpack_require__.r(__webpack_exports__);
   \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./src/headerHandler.js":
+/*!******************************!*\
+  !*** ./src/headerHandler.js ***!
+  \******************************/
+/***/ (() => {
+
 
 
 /***/ }),
@@ -32,6 +43,7 @@ __webpack_require__.r(__webpack_exports__);
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _asset_Logo_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../asset/Logo .svg */ "./asset/Logo .svg");
 /* harmony import */ var _asset_BannerPicture_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../asset/BannerPicture.svg */ "./asset/BannerPicture.svg");
@@ -118,6 +130,7 @@ load_img("btn-icon", _asset_ArrowRight_svg__WEBPACK_IMPORTED_MODULE_14__, 1, "ar
   \******************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 module.exports = __webpack_require__.p + "images/ArrowRight.svg";
 
 /***/ }),
@@ -128,6 +141,7 @@ module.exports = __webpack_require__.p + "images/ArrowRight.svg";
   \*********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 module.exports = __webpack_require__.p + "images/BannerPicture.svg";
 
 /***/ }),
@@ -138,6 +152,7 @@ module.exports = __webpack_require__.p + "images/BannerPicture.svg";
   \*************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 module.exports = __webpack_require__.p + "images/Logo .svg";
 
 /***/ }),
@@ -148,6 +163,7 @@ module.exports = __webpack_require__.p + "images/Logo .svg";
   \************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 module.exports = __webpack_require__.p + "images/ProfilePicture-1.png";
 
 /***/ }),
@@ -158,6 +174,7 @@ module.exports = __webpack_require__.p + "images/ProfilePicture-1.png";
   \************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 module.exports = __webpack_require__.p + "images/ProfilePicture-2.png";
 
 /***/ }),
@@ -168,6 +185,7 @@ module.exports = __webpack_require__.p + "images/ProfilePicture-2.png";
   \************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 module.exports = __webpack_require__.p + "images/ProfilePicture-3.png";
 
 /***/ }),
@@ -178,6 +196,7 @@ module.exports = __webpack_require__.p + "images/ProfilePicture-3.png";
   \************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 module.exports = __webpack_require__.p + "images/ProjectPicture-1.svg";
 
 /***/ }),
@@ -188,6 +207,7 @@ module.exports = __webpack_require__.p + "images/ProjectPicture-1.svg";
   \************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 module.exports = __webpack_require__.p + "images/ProjectPicture-2.svg";
 
 /***/ }),
@@ -198,6 +218,7 @@ module.exports = __webpack_require__.p + "images/ProjectPicture-2.svg";
   \************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 module.exports = __webpack_require__.p + "images/ProjectPicture-3.svg";
 
 /***/ }),
@@ -208,6 +229,7 @@ module.exports = __webpack_require__.p + "images/ProjectPicture-3.svg";
   \************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 module.exports = __webpack_require__.p + "images/ServicesBranding.svg";
 
 /***/ }),
@@ -218,6 +240,7 @@ module.exports = __webpack_require__.p + "images/ServicesBranding.svg";
   \********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 module.exports = __webpack_require__.p + "images/ServicesCode.svg";
 
 /***/ }),
@@ -228,6 +251,7 @@ module.exports = __webpack_require__.p + "images/ServicesCode.svg";
   \***********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 module.exports = __webpack_require__.p + "images/ServicesEditing.svg";
 
 /***/ }),
@@ -238,6 +262,7 @@ module.exports = __webpack_require__.p + "images/ServicesEditing.svg";
   \*********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 module.exports = __webpack_require__.p + "images/ServicesFigma.svg";
 
 /***/ }),
@@ -248,6 +273,7 @@ module.exports = __webpack_require__.p + "images/ServicesFigma.svg";
   \**********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 module.exports = __webpack_require__.p + "images/ServicesMedium.svg";
 
 /***/ }),
@@ -258,6 +284,7 @@ module.exports = __webpack_require__.p + "images/ServicesMedium.svg";
   \*******************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 module.exports = __webpack_require__.p + "images/ServicesPen.svg";
 
 /***/ })
@@ -289,6 +316,30 @@ module.exports = __webpack_require__.p + "images/ServicesPen.svg";
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/global */
 /******/ 	(() => {
 /******/ 		__webpack_require__.g = (function() {
@@ -299,6 +350,11 @@ module.exports = __webpack_require__.p + "images/ServicesPen.svg";
 /******/ 				if (typeof window === 'object') return window;
 /******/ 			}
 /******/ 		})();
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
@@ -337,15 +393,19 @@ module.exports = __webpack_require__.p + "images/ServicesPen.svg";
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
+"use strict";
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/style.css */ "./css/style.css");
 /* harmony import */ var _css_text_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/text-style.css */ "./css/text-style.css");
-/* harmony import */ var _load_img_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./load_img.js */ "./src/load_img.js");
+/* harmony import */ var _headerHandler__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./headerHandler */ "./src/headerHandler.js");
+/* harmony import */ var _headerHandler__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_headerHandler__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _load_img_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./load_img.js */ "./src/load_img.js");
+
 
 
 
