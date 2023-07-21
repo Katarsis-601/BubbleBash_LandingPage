@@ -47,6 +47,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _asset_ProfilePicture_1_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../asset/ProfilePicture-1.png */ "./asset/ProfilePicture-1.png");
 /* harmony import */ var _asset_ProfilePicture_2_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../asset/ProfilePicture-2.png */ "./asset/ProfilePicture-2.png");
 /* harmony import */ var _asset_ProfilePicture_3_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../asset/ProfilePicture-3.png */ "./asset/ProfilePicture-3.png");
+/* harmony import */ var _asset_ArrowRight_svg__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../asset/ArrowRight.svg */ "./asset/ArrowRight.svg");
 //logo header
 
 //image banner
@@ -67,6 +68,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
 function load_img(classname, img_name, order = 0, alt = false, size = false) {
     if (alt) {
         document.getElementsByClassName(classname)[order].src = alt
@@ -78,6 +81,8 @@ function load_img(classname, img_name, order = 0, alt = false, size = false) {
 }
 //icon logo on header
 load_img("icon_logo", _asset_Logo_svg__WEBPACK_IMPORTED_MODULE_0__)
+load_img("icon_logo", _asset_Logo_svg__WEBPACK_IMPORTED_MODULE_0__, 1)
+
 
 //banner image on banner
 load_img("banner_img", _asset_BannerPicture_svg__WEBPACK_IMPORTED_MODULE_1__)
@@ -100,6 +105,20 @@ load_img("portofolio-card_image", _asset_ProjectPicture_3_svg__WEBPACK_IMPORTED_
 load_img("profile-img", _asset_ProfilePicture_1_png__WEBPACK_IMPORTED_MODULE_11__, 0, "Profile Picture 1")
 load_img("profile-img", _asset_ProfilePicture_2_png__WEBPACK_IMPORTED_MODULE_12__, 1, "Profile Picture 2")
 load_img("profile-img", _asset_ProfilePicture_3_png__WEBPACK_IMPORTED_MODULE_13__, 2, "Profile Picture 3")
+
+load_img("btn-icon", _asset_ArrowRight_svg__WEBPACK_IMPORTED_MODULE_14__, 0, "arrow icon")
+load_img("btn-icon", _asset_ArrowRight_svg__WEBPACK_IMPORTED_MODULE_14__, 1, "arrow icon")
+
+
+/***/ }),
+
+/***/ "./asset/ArrowRight.svg":
+/*!******************************!*\
+  !*** ./asset/ArrowRight.svg ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "images/ArrowRight.svg";
 
 /***/ }),
 

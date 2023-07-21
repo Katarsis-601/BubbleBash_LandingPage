@@ -18,6 +18,8 @@ import Profile_1 from "../asset/ProfilePicture-1.png"
 import Profile_2 from "../asset/ProfilePicture-2.png"
 import Profile_3 from "../asset/ProfilePicture-3.png"
 
+import ArrowIcon from "../asset/ArrowRight.svg"
+
 function load_img(classname, img_name, order = 0, alt = false, size = false) {
     if (alt) {
         document.getElementsByClassName(classname)[order].src = alt
@@ -29,6 +31,8 @@ function load_img(classname, img_name, order = 0, alt = false, size = false) {
 }
 //icon logo on header
 load_img("icon_logo", Logo)
+load_img("icon_logo", Logo, 1)
+
 
 //banner image on banner
 load_img("banner_img", BannerPicture)
@@ -51,3 +55,6 @@ load_img("portofolio-card_image", ProjectPicture_3, 2, "ProjectPicture_3")
 load_img("profile-img", Profile_1, 0, "Profile Picture 1")
 load_img("profile-img", Profile_2, 1, "Profile Picture 2")
 load_img("profile-img", Profile_3, 2, "Profile Picture 3")
+
+load_img("btn-icon", ArrowIcon, 0, "arrow icon")
+load_img("btn-icon", ArrowIcon, 1, "arrow icon")
