@@ -34,14 +34,24 @@ button {
   display: flex;
 }
 header {
+  transition: background-color 1s;
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: transparent;
   display: flex;
   justify-content: center;
+  color: white;
   z-index: 99;
 }
+
+.header-bg {
+  transition: background-color 1s;
+  background-color: white;
+  color: black;
+  opacity: 0.9;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 .header-container {
   padding: 16px 0;
   justify-content: space-between;
@@ -55,7 +65,7 @@ header {
   margin: 0;
   font-size: 125%;
   margin-left: 8px;
-  color: white;
+  color: inherit;
   font-weight: 600;
   line-height: normal;
 }
@@ -67,10 +77,11 @@ nav {
 .nav-content {
   width: 100%;
   display: flex;
-  color: white;
+  color: inherit;
   justify-content: space-between;
 }
 .nav-btn {
+  cursor: pointer;
   font-size: 100%;
   font-weight: 400;
   line-height: normal;

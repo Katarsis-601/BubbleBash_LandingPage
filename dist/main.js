@@ -27,12 +27,71 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/headerHandler.js":
-/*!******************************!*\
-  !*** ./src/headerHandler.js ***!
-  \******************************/
+/***/ "./src/header/headerHandler.js":
+/*!*************************************!*\
+  !*** ./src/header/headerHandler.js ***!
+  \*************************************/
 /***/ (() => {
 
+let height = 0
+window.onscroll = () => {
+    height = window.scrollY
+    if (height >= 402) {
+        document.querySelector("header").classList.add("header-bg")
+    } else if (height < 402) {
+        document.querySelector("header").classList.remove("header-bg")
+
+    }
+}
+
+
+
+
+
+/***/ }),
+
+/***/ "./src/header/navHandler.js":
+/*!**********************************!*\
+  !*** ./src/header/navHandler.js ***!
+  \**********************************/
+/***/ (() => {
+
+for (let i = 0; i < document.getElementsByClassName("nav-btn").length; i++) {
+    document.getElementsByClassName("nav-btn")[i].addEventListener("click", () => {
+        switch (i) {
+            case 0:
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                })
+                break;
+            case 1:
+                window.scrollTo({
+                    top: 1350,
+                    behavior: "smooth"
+                })
+                break;
+            case 2:
+                window.scrollTo({
+                    top: 2175,
+                    behavior: "smooth"
+                })
+                break;
+            case 3:
+                window.scrollTo({
+                    top: 2675,
+                    behavior: "smooth"
+                })
+                break;
+            case 4:
+                window.scrollTo({
+                    top: 3145,
+                    behavior: "smooth"
+                })
+                break;
+        }
+    })
+}
 
 
 /***/ }),
@@ -402,9 +461,12 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/style.css */ "./css/style.css");
 /* harmony import */ var _css_text_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/text-style.css */ "./css/text-style.css");
-/* harmony import */ var _headerHandler__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./headerHandler */ "./src/headerHandler.js");
-/* harmony import */ var _headerHandler__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_headerHandler__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _load_img_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./load_img.js */ "./src/load_img.js");
+/* harmony import */ var _header_headerHandler_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./header/headerHandler.js */ "./src/header/headerHandler.js");
+/* harmony import */ var _header_headerHandler_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_header_headerHandler_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _header_navHandler_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./header/navHandler.js */ "./src/header/navHandler.js");
+/* harmony import */ var _header_navHandler_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_header_navHandler_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _load_img_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./load_img.js */ "./src/load_img.js");
+
 
 
 
