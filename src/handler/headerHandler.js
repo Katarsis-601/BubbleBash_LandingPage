@@ -5,7 +5,6 @@ window.onscroll = () => {
         document.querySelector("header").classList.add("header-bg")
     } else if (height < 402) {
         document.querySelector("header").classList.remove("header-bg")
-
     }
 }
 

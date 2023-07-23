@@ -1,5 +1,5 @@
 import "../css/style.css"
 import "../css/text-style.css"
-import "./header/headerHandler.js"
-import "./header/navHandler.js"
-import "./load_img.js"
+import "./handler/headerHandler.js"
+import "./handler/navHandler.js"
+import "./handler/load_img.js"

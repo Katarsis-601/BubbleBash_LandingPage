@@ -14,3 +14,17 @@
   font-weight: 600;
   line-height: normal;
 }
+.black-text {
+  color: #2a2c3d;
+  line-height: normal;
+}
+
+.text-150 {
+  font-size: 150%;
+  font-weight: 600;
+}
+
+.text-120 {
+  font-size: 120%;
+  font-weight: 400;
+}

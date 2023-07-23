@@ -1,37 +1,29 @@
-//logo header
-import Logo from "../asset/Logo .svg"
-//image banner
-import BannerPicture from "../asset/BannerPicture.svg"
-//image card services
-import FigmaIcon from "../asset/ServicesFigma.svg"
-import CodeIcon from "../asset/ServicesCode.svg"
-import ChartIcon from "../asset/ServicesBranding.svg"
-import CameraIcon from "../asset/ServicesEditing.svg"
-import MediumIcon from "../asset/ServicesMedium.svg"
-import PenIcon from "../asset/ServicesPen.svg"
-//load project image
-import ProjectPicture_1 from "../asset/ProjectPicture-1.svg"
-import ProjectPicture_2 from "../asset/ProjectPicture-2.svg"
-import ProjectPicture_3 from "../asset/ProjectPicture-3.svg"
-//load profile image
-import Profile_1 from "../asset/ProfilePicture-1.png"
-import Profile_2 from "../asset/ProfilePicture-2.png"
-import Profile_3 from "../asset/ProfilePicture-3.png"
-
-import ArrowIcon from "../asset/ArrowRight.svg"
-
-function load_img(classname, img_name, order = 0, alt = false, size = false) {
+import * as image from "../loaders/img-loader.js"
+function load_img({ classname, img_name, order = 0, alt = false, size = false }) {
+    let listOfDocument = []
     if (alt) {
         document.getElementsByClassName(classname)[order].src = alt
     }
     if (size) {
         document.getElementsByClassName(classname)[order].width = size
     }
+
+    if (order != 0) {
+        for (let i = 0; i < order; i++) {
+            listOfDocument.push(document.getElementsByClassName(classname)[i].src = img_name)
+        }
+        return listOfDocument
+    }
+
     return document.getElementsByClassName(classname)[order].src = img_name
 }
 //icon logo on header
-load_img("icon_logo", Logo)
-load_img("icon_logo", Logo, 1)
+
+load_img({
+    classname: "icon_logo",
+    img_name: image.Logo
+})
+
 
 
 //banner image on banner

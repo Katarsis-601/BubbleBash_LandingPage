@@ -1,7 +1,7 @@
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
-
+const path = require('path')
 module.exports = {
     entry: "./src/index.js",
     output: {
@@ -18,6 +18,10 @@ module.exports = {
     plugins: [new MiniCssExtractPlugin({
         filename: "[name].css",
         chunkFilename: "[id].css"
-    }), new HtmlWebpackPlugin({ template: "./index.html" })]
-
+    }), new HtmlWebpackPlugin({ template: "./index.html" })],
+    resolve: {
+        alias: {
+            asset: path.resolve(__dirname, "./asset/")
+        }
+    }
 }
