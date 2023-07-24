@@ -39,7 +39,7 @@ load_img({
 load_img({
   classname: "banner_img",
   source: [image.BannerPicture],
-  alt: ["Babber Image"],
+  alt: ["Banner Image"],
 });
 
 load_img({
@@ -69,10 +69,29 @@ load_img({
     image.ProjectPicture_2,
     image.ProjectPicture_3,
   ],
+  alt: ["ProjectPicture 1", "ProjectPicture 2", "ProjectPicture 3"],
 });
 
 load_img({
   classname: "profile-img",
   source: [image.Profile_1, image.Profile_2, image.Profile_3],
+  alt: ["Image Profile 1", "Image Profile 2", "Image Profile 3"],
 });
-load_img({ classname: "btn-icon", source: [image.ArrowIcon] });
+
+load_img({
+  classname: "footer-icon",
+  source: [
+    image.facebookLogo,
+    image.twitterLogo,
+    image.instagramLogo,
+    image.linkedInLogo,
+  ],
+  alt: ["facebook logo", "twitter logo", "instagram logo", "linkedin logo"],
+  width: 32,
+});
+
+load_img({
+  classname: "btn-icon",
+  source: [image.ArrowIcon],
+  alt: ["arrow icon"],
+});
