@@ -49,6 +49,56 @@ window.onscroll = () => {
 
 /***/ }),
 
+/***/ "./src/handler/imageHandler.js":
+/*!*************************************!*\
+  !*** ./src/handler/imageHandler.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   addAttribute: () => (/* binding */ addAttribute),
+/* harmony export */   getImgDocument: () => (/* binding */ getImgDocument)
+/* harmony export */ });
+//i dont know how to name this function
+//simply this function selecting img element base on classname
+function getImgDocument(classname) {
+  return document.getElementsByClassName(classname);
+}
+
+//add alternative attribute on image document
+function addAlt({ document, alt, order }) {
+  if (alt) {
+    if (alt.length === 1) {
+      document[order].alt = alt[0];
+
+      return document;
+    }
+
+    document[order].alt = alt[order];
+  }
+  return document;
+}
+
+//add width size attribute on image document
+function addWidth({ document, size, order }) {
+  if (size) {
+    document[order].width = size;
+  }
+  return document;
+}
+
+function addAttribute({ document, size, alt, order }) {
+  document = addAlt({ document, order, alt });
+  document = addWidth({ document, order, size });
+
+  return document;
+}
+
+
+/***/ }),
+
 /***/ "./src/handler/load_img.js":
 /*!*********************************!*\
   !*** ./src/handler/load_img.js ***!
@@ -58,58 +108,85 @@ window.onscroll = () => {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _loaders_img_loader_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../loaders/img-loader.js */ "./src/loaders/img-loader.js");
+/* harmony import */ var _imageHandler_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./imageHandler.js */ "./src/handler/imageHandler.js");
 
-function load_img({ classname, img_name, order = 0, alt = false, size = false }) {
-    let listOfDocument = []
-    if (alt) {
-        document.getElementsByClassName(classname)[order].src = alt
-    }
-    if (size) {
-        document.getElementsByClassName(classname)[order].width = size
-    }
 
-    if (order != 0) {
-        for (let i = 0; i < order; i++) {
-            listOfDocument.push(document.getElementsByClassName(classname)[i].src = img_name)
-        }
-        return listOfDocument
-    }
 
-    return document.getElementsByClassName(classname)[order].src = img_name
+function loadMultipleDocument({ document, source, alt, width }) {
+  let listOfDocument = [];
+  for (let i = 0; i < document.length; i++) {
+    if (source.length === 1) {
+      (0,_imageHandler_js__WEBPACK_IMPORTED_MODULE_1__.addAttribute)({ document: document, size: width, alt: alt, order: i });
+      document[i].src = source[0];
+      listOfDocument.push(document[i]);
+    } else {
+      (0,_imageHandler_js__WEBPACK_IMPORTED_MODULE_1__.addAttribute)({ document: document, size: width, alt: alt, order: i });
+      document[i].src = source[i];
+      listOfDocument.push(document[i]);
+    }
+  }
+  return listOfDocument;
+}
+
+function load_img({ classname, source = [], alt = false, width = false }) {
+  let document = (0,_imageHandler_js__WEBPACK_IMPORTED_MODULE_1__.getImgDocument)(classname);
+
+  if (document.length != 0) {
+    return loadMultipleDocument({ document, source, alt, width });
+  }
+
+  (0,_imageHandler_js__WEBPACK_IMPORTED_MODULE_1__.addAttribute)({ document: document, size: width, alt: alt, order: 0 });
+  return document[0];
 }
 //icon logo on header
 
 load_img({
-    classname: "icon_logo",
-    img_name: _loaders_img_loader_js__WEBPACK_IMPORTED_MODULE_0__.Logo
-})
+  classname: "icon_logo",
+  source: [_loaders_img_loader_js__WEBPACK_IMPORTED_MODULE_0__.Logo],
+  alt: ["Icon logo"],
+  width: 35,
+});
 
+load_img({
+  classname: "banner_img",
+  source: [_loaders_img_loader_js__WEBPACK_IMPORTED_MODULE_0__.BannerPicture],
+  alt: ["Babber Image"],
+});
 
+load_img({
+  classname: "card-services_image",
+  source: [
+    _loaders_img_loader_js__WEBPACK_IMPORTED_MODULE_0__.ServiceIcon_1,
+    _loaders_img_loader_js__WEBPACK_IMPORTED_MODULE_0__.ServiceIcon_2,
+    _loaders_img_loader_js__WEBPACK_IMPORTED_MODULE_0__.ServiceIcon_3,
+    _loaders_img_loader_js__WEBPACK_IMPORTED_MODULE_0__.ServiceIcon_4,
+    _loaders_img_loader_js__WEBPACK_IMPORTED_MODULE_0__.ServiceIcon_5,
+    _loaders_img_loader_js__WEBPACK_IMPORTED_MODULE_0__.ServiceIcon_6,
+  ],
+  alt: [
+    "figma icon",
+    "code icon",
+    "chart icon",
+    "record icon",
+    "Medium Icon",
+    "Pen Icon",
+  ],
+});
 
-//banner image on banner
-load_img("banner_img", BannerPicture)
+load_img({
+  classname: "portofolio-card_image",
+  source: [
+    _loaders_img_loader_js__WEBPACK_IMPORTED_MODULE_0__.ProjectPicture_1,
+    _loaders_img_loader_js__WEBPACK_IMPORTED_MODULE_0__.ProjectPicture_2,
+    _loaders_img_loader_js__WEBPACK_IMPORTED_MODULE_0__.ProjectPicture_3,
+  ],
+});
 
-//card image on services content
-load_img("card-services_image", FigmaIcon, 0, "figma icon")
-load_img("card-services_image", CodeIcon, 1, "code icon")
-load_img("card-services_image", MediumIcon, 2, "MediumIcon")
-load_img("card-services_image", ChartIcon, 3, "ChartIcon")
-load_img("card-services_image", CameraIcon, 4, "CameraIcon")
-load_img("card-services_image", PenIcon, 5, "PenIcon")
-
-//project image
-load_img("portofolio-card_image", ProjectPicture_1, 0, "ProjectPicture_1")
-load_img("portofolio-card_image", ProjectPicture_2, 1, "ProjectPicture_2")
-load_img("portofolio-card_image", ProjectPicture_3, 2, "ProjectPicture_3")
-
-//profile image
-
-load_img("profile-img", Profile_1, 0, "Profile Picture 1")
-load_img("profile-img", Profile_2, 1, "Profile Picture 2")
-load_img("profile-img", Profile_3, 2, "Profile Picture 3")
-
-load_img("btn-icon", ArrowIcon, 0, "arrow icon")
-load_img("btn-icon", ArrowIcon, 1, "arrow icon")
+load_img({
+  classname: "profile-img",
+  source: [_loaders_img_loader_js__WEBPACK_IMPORTED_MODULE_0__.Profile_1, _loaders_img_loader_js__WEBPACK_IMPORTED_MODULE_0__.Profile_2, _loaders_img_loader_js__WEBPACK_IMPORTED_MODULE_0__.Profile_3],
+});
+load_img({ classname: "btn-icon", source: [_loaders_img_loader_js__WEBPACK_IMPORTED_MODULE_0__.ArrowIcon] });
 
 
 /***/ }),

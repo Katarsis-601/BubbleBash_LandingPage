@@ -1,52 +1,78 @@
-import * as image from "../loaders/img-loader.js"
-function load_img({ classname, img_name, order = 0, alt = false, size = false }) {
-    let listOfDocument = []
-    if (alt) {
-        document.getElementsByClassName(classname)[order].src = alt
-    }
-    if (size) {
-        document.getElementsByClassName(classname)[order].width = size
-    }
+import * as image from "../loaders/img-loader.js";
+import { getImgDocument, addAttribute } from "./imageHandler.js";
 
-    if (order != 0) {
-        for (let i = 0; i < order; i++) {
-            listOfDocument.push(document.getElementsByClassName(classname)[i].src = img_name)
-        }
-        return listOfDocument
+function loadMultipleDocument({ document, source, alt, width }) {
+  let listOfDocument = [];
+  for (let i = 0; i < document.length; i++) {
+    if (source.length === 1) {
+      addAttribute({ document: document, size: width, alt: alt, order: i });
+      document[i].src = source[0];
+      listOfDocument.push(document[i]);
+    } else {
+      addAttribute({ document: document, size: width, alt: alt, order: i });
+      document[i].src = source[i];
+      listOfDocument.push(document[i]);
     }
+  }
+  return listOfDocument;
+}
 
-    return document.getElementsByClassName(classname)[order].src = img_name
+function load_img({ classname, source = [], alt = false, width = false }) {
+  let document = getImgDocument(classname);
+
+  if (document.length != 0) {
+    return loadMultipleDocument({ document, source, alt, width });
+  }
+
+  addAttribute({ document: document, size: width, alt: alt, order: 0 });
+  return document[0];
 }
 //icon logo on header
 
 load_img({
-    classname: "icon_logo",
-    img_name: image.Logo
-})
+  classname: "icon_logo",
+  source: [image.Logo],
+  alt: ["Icon logo"],
+  width: 35,
+});
 
+load_img({
+  classname: "banner_img",
+  source: [image.BannerPicture],
+  alt: ["Babber Image"],
+});
 
+load_img({
+  classname: "card-services_image",
+  source: [
+    image.ServiceIcon_1,
+    image.ServiceIcon_2,
+    image.ServiceIcon_3,
+    image.ServiceIcon_4,
+    image.ServiceIcon_5,
+    image.ServiceIcon_6,
+  ],
+  alt: [
+    "figma icon",
+    "code icon",
+    "chart icon",
+    "record icon",
+    "Medium Icon",
+    "Pen Icon",
+  ],
+});
 
-//banner image on banner
-load_img("banner_img", BannerPicture)
+load_img({
+  classname: "portofolio-card_image",
+  source: [
+    image.ProjectPicture_1,
+    image.ProjectPicture_2,
+    image.ProjectPicture_3,
+  ],
+});
 
-//card image on services content
-load_img("card-services_image", FigmaIcon, 0, "figma icon")
-load_img("card-services_image", CodeIcon, 1, "code icon")
-load_img("card-services_image", MediumIcon, 2, "MediumIcon")
-load_img("card-services_image", ChartIcon, 3, "ChartIcon")
-load_img("card-services_image", CameraIcon, 4, "CameraIcon")
-load_img("card-services_image", PenIcon, 5, "PenIcon")
-
-//project image
-load_img("portofolio-card_image", ProjectPicture_1, 0, "ProjectPicture_1")
-load_img("portofolio-card_image", ProjectPicture_2, 1, "ProjectPicture_2")
-load_img("portofolio-card_image", ProjectPicture_3, 2, "ProjectPicture_3")
-
-//profile image
-
-load_img("profile-img", Profile_1, 0, "Profile Picture 1")
-load_img("profile-img", Profile_2, 1, "Profile Picture 2")
-load_img("profile-img", Profile_3, 2, "Profile Picture 3")
-
-load_img("btn-icon", ArrowIcon, 0, "arrow icon")
-load_img("btn-icon", ArrowIcon, 1, "arrow icon")
+load_img({
+  classname: "profile-img",
+  source: [image.Profile_1, image.Profile_2, image.Profile_3],
+});
+load_img({ classname: "btn-icon", source: [image.ArrowIcon] });
