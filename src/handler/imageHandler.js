@@ -26,9 +26,14 @@ function addWidth({ document, size, order }) {
   return document;
 }
 
+function addLazyLoading({ document, order }) {
+  document[order].loading = "lazy";
+  return document;
+}
+
 export function addAttribute({ document, size, alt, order }) {
   document = addAlt({ document, order, alt });
   document = addWidth({ document, order, size });
-
+  document = addLazyLoading({ document, order });
   return document;
 }

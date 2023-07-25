@@ -200,6 +200,8 @@ main {
 }
 
 .card-services {
+  max-width: 341px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -232,6 +234,7 @@ main {
 }
 .portofolio-card {
   max-width: 360px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   text-align: start;
@@ -264,6 +267,7 @@ main {
 }
 .review-card {
   max-width: 400px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -382,29 +386,139 @@ main {
 }
 .navbar-btn {
   display: none;
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+
+.navbar-btn::after {
+  content: " ";
+  position: absolute;
+  margin: 5px auto;
+  width: 20px;
+  border: 2px solid white;
+}
+.navbar-btn::before {
+  content: " ";
+  position: absolute;
+  margin: -7px auto;
+  width: 20px;
+  border: 2px solid white;
+}
+
+.navbar-btn_black {
+  border: 2px solid black;
+}
+.navbar-btn_black::after {
+  border: 2px solid black;
+}
+.navbar-btn_black::before {
+  border: 2px solid black;
 }
 @media only screen and (max-width: 992px) {
   nav {
     display: none;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 78px;
+    left: 0;
+    background-color: white;
+    color: #2a2c3d;
+  }
+  .nav-content {
+    width: 90%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .nav-btn {
+    padding: 20px;
+  }
+  .nav-btn:hover {
+    background-color: gray;
   }
   .navbar-btn {
     display: flex;
-    padding: 20px;
-    border-radius: 10px;
-    border: 2px solid white;
+    justify-content: center;
   }
-
-  .navbar-btn::after {
-    content: " ";
-    position: absolute;
-    width: 10px;
-    border: 2px solid white;
+  .services-card_layout {
+    width: 100%;
+    gap: 30px;
   }
-
-  .navbar-btn_black {
-    border: 2px solid black;
+  .portofolio-card_layout {
+    gap: 20px;
   }
-
+  .review-card {
+    text-align: center;
+  }
+  .review-card_profile {
+    flex-direction: column;
+  }
+  .profile-card_name {
+    margin: 8px 0 0 0;
+  }
+}
+@media only screen and (max-width: 720px) {
   body {
+    font-size: 0.8em;
+  }
+  .banner_img {
+    top: -200px;
+    margin-bottom: -200px;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .services-card_layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .services-content_header {
+    align-items: center;
+  }
+  .card-services {
+    max-width: 400px;
+    width: 100%;
+  }
+  .portofolio-container {
+    align-items: center;
+  }
+  .portofolio-card_layout {
+    flex-direction: column;
+    align-items: center;
+  }
+  .portofolio-card {
+    width: 100%;
+    max-width: 400px;
+    align-items: center;
+    text-align: center;
+  }
+  .portofolio-card_image {
+    width: 100%;
+  }
+  .review-card_layout {
+    width: 100%;
+    flex-direction: column;
+  }
+  .review-container {
+    text-align: center;
+  }
+  .review-card_layout {
+    align-items: center;
+  }
+  .review-card {
+    max-width: 500px;
+    width: 100%;
+  }
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer-container {
+    padding-top: 50px;
   }
 }
