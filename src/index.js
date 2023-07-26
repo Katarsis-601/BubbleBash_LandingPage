@@ -1,5 +1,3 @@
-import "../css/style.css"
-import "../css/text-style.css"
-import "./handler/headerHandler.js"
-import "./handler/navHandler.js"
-import "./handler/load_img.js"
+import "./css/style.css";
+import "./css/text-style.css";
+import "./handler/headerHandler.js";

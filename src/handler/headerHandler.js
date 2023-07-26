@@ -1,3 +1,5 @@
+import "./navHandler.js";
+
 let height = 0;
 window.onscroll = () => {
   height = window.scrollY;

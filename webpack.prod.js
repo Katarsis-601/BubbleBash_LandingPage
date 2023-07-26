@@ -1,15 +1,14 @@
-const path = require("path")
-const { merge } = require("webpack-merge")
-const config = require("./webpack.config")
+const path = require("path");
+const { merge } = require("webpack-merge");
+const config = require("./webpack.config");
 module.exports = merge(config, {
-    mode: "production",
-    output: {
-        path: path.resolve(__dirname, "dist"),
-        filename: "bundle.[contenthash].js",
-        assetModuleFilename: "images/[hash][ext]",
-
-    },
-    optimization: {
-        runtimeChunk: "single"
-    }
-})
+  mode: "production",
+  output: {
+    path: path.resolve(__dirname, "pages"),
+    filename: "[contenthash].bundle.js",
+    assetModuleFilename: "images/[hash][ext]",
+  },
+  optimization: {
+    runtimeChunk: "single",
+  },
+});

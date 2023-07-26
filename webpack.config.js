@@ -3,7 +3,14 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path");
 module.exports = {
-  entry: "./src/index.js",
+  entry: {
+    main: "./src/index.js",
+    img_loader: {
+      import: "./src/loaders/load_img.js",
+      dependOn: "img",
+    },
+    img: "./src/loaders/img-loader.js",
+  },
   output: {
     assetModuleFilename: "images/[name][ext]",
     clean: true,
@@ -26,7 +33,7 @@ module.exports = {
   ],
   resolve: {
     alias: {
-      asset: path.resolve(__dirname, "./asset/"),
+      asset: path.resolve(__dirname, "./src/asset"),
     },
   },
 };
