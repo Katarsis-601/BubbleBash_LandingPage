@@ -519,3 +519,12 @@ main {
     gap: 20px;
   }
 }
+@media only screen and (max-width: 450px) {
+  body {
+    font-size: 0.6em;
+  }
+  .banner_img {
+    top: -120px;
+    margin-bottom: -120px;
+  }
+}
