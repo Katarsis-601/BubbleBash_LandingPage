@@ -10,4 +10,10 @@ module.exports = merge(config, {
     clean: true,
   },
   mode: "development",
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: "[name].css",
+      chunkFilename: "[id].css",
+    }),
+  ],
 });

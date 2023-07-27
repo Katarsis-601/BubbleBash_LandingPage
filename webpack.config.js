@@ -24,13 +24,7 @@ module.exports = {
   optimization: {
     minimizer: [new CssMinimizerPlugin()],
   },
-  plugins: [
-    new MiniCssExtractPlugin({
-      filename: "[name].css",
-      chunkFilename: "[id].css",
-    }),
-    new HtmlWebpackPlugin({ template: "./index.html" }),
-  ],
+  plugins: [new HtmlWebpackPlugin({ template: "./index.html" })],
   resolve: {
     alias: {
       asset: path.resolve(__dirname, "./src/asset"),
