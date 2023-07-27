@@ -12,13 +12,12 @@ module.exports = {
     img: "./src/loaders/img-loader.js",
   },
   output: {
-    assetModuleFilename: "images/[name][ext]",
     clean: true,
   },
   module: {
     rules: [
-      { test: /.css$/, use: [MiniCssExtractPlugin.loader, "css-loader"] },
-      { test: /.(png|svg|jpg|jpeg)$/i, type: "asset/resource" },
+      { test: /\.css$/, use: [MiniCssExtractPlugin.loader, "css-loader"] },
+      { test: /\.(png|svg|jpg|jpeg)$/i, type: "asset/resource" },
     ],
   },
   optimization: {

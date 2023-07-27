@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/ArrowRight.svg\";\n\n//# sourceURL=webpack://bubble-bash-landing-page/./src/asset/ArrowRight.svg?");
+eval("module.exports = __webpack_require__.p + \"src/images/52920c5d9620ceaff15f..svg\";\n\n//# sourceURL=webpack://bubble-bash-landing-page/./src/asset/ArrowRight.svg?");
 
 /***/ }),
 
@@ -36,7 +36,7 @@ eval("module.exports = __webpack_require__.p + \"images/ArrowRight.svg\";\n\n//#
   \*************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/BannerPicture.svg\";\n\n//# sourceURL=webpack://bubble-bash-landing-page/./src/asset/BannerPicture.svg?");
+eval("module.exports = __webpack_require__.p + \"src/images/90492f555a431d39137c..svg\";\n\n//# sourceURL=webpack://bubble-bash-landing-page/./src/asset/BannerPicture.svg?");
 
 /***/ }),
 
@@ -46,7 +46,7 @@ eval("module.exports = __webpack_require__.p + \"images/BannerPicture.svg\";\n\n
   \*************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/InstagramLogo.svg\";\n\n//# sourceURL=webpack://bubble-bash-landing-page/./src/asset/InstagramLogo.svg?");
+eval("module.exports = __webpack_require__.p + \"src/images/1e4977f062889dc8ad48..svg\";\n\n//# sourceURL=webpack://bubble-bash-landing-page/./src/asset/InstagramLogo.svg?");
 
 /***/ }),
 
@@ -56,7 +56,7 @@ eval("module.exports = __webpack_require__.p + \"images/InstagramLogo.svg\";\n\n
   \************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/LinkedInLogo.svg\";\n\n//# sourceURL=webpack://bubble-bash-landing-page/./src/asset/LinkedInLogo.svg?");
+eval("module.exports = __webpack_require__.p + \"src/images/6211932f178abae575f0..svg\";\n\n//# sourceURL=webpack://bubble-bash-landing-page/./src/asset/LinkedInLogo.svg?");
 
 /***/ }),
 
@@ -66,7 +66,7 @@ eval("module.exports = __webpack_require__.p + \"images/LinkedInLogo.svg\";\n\n/
   \*****************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/Logo .svg\";\n\n//# sourceURL=webpack://bubble-bash-landing-page/./src/asset/Logo_.svg?");
+eval("module.exports = __webpack_require__.p + \"src/images/708288128f46282e5fa0..svg\";\n\n//# sourceURL=webpack://bubble-bash-landing-page/./src/asset/Logo_.svg?");
 
 /***/ }),
 
@@ -76,7 +76,7 @@ eval("module.exports = __webpack_require__.p + \"images/Logo .svg\";\n\n//# sour
   \****************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/ProfilePicture-1.png\";\n\n//# sourceURL=webpack://bubble-bash-landing-page/./src/asset/ProfilePicture-1.png?");
+eval("module.exports = __webpack_require__.p + \"src/images/4c031afbed4bedc771f6..png\";\n\n//# sourceURL=webpack://bubble-bash-landing-page/./src/asset/ProfilePicture-1.png?");
 
 /***/ }),
 
@@ -86,7 +86,7 @@ eval("module.exports = __webpack_require__.p + \"images/ProfilePicture-1.png\";\
   \****************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/ProfilePicture-2.png\";\n\n//# sourceURL=webpack://bubble-bash-landing-page/./src/asset/ProfilePicture-2.png?");
+eval("module.exports = __webpack_require__.p + \"src/images/a90452a54fb962f5dfe4..png\";\n\n//# sourceURL=webpack://bubble-bash-landing-page/./src/asset/ProfilePicture-2.png?");
 
 /***/ }),
 
@@ -96,7 +96,7 @@ eval("module.exports = __webpack_require__.p + \"images/ProfilePicture-2.png\";\
   \****************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/ProfilePicture-3.png\";\n\n//# sourceURL=webpack://bubble-bash-landing-page/./src/asset/ProfilePicture-3.png?");
+eval("module.exports = __webpack_require__.p + \"src/images/e428a07562beec8dc36f..png\";\n\n//# sourceURL=webpack://bubble-bash-landing-page/./src/asset/ProfilePicture-3.png?");
 
 /***/ }),
 
@@ -106,7 +106,7 @@ eval("module.exports = __webpack_require__.p + \"images/ProfilePicture-3.png\";\
   \****************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/ProjectPicture-1.svg\";\n\n//# sourceURL=webpack://bubble-bash-landing-page/./src/asset/ProjectPicture-1.svg?");
+eval("module.exports = __webpack_require__.p + \"src/images/9848d5c9c5fd7082418d..svg\";\n\n//# sourceURL=webpack://bubble-bash-landing-page/./src/asset/ProjectPicture-1.svg?");
 
 /***/ }),
 
@@ -116,7 +116,7 @@ eval("module.exports = __webpack_require__.p + \"images/ProjectPicture-1.svg\";\
   \****************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/ProjectPicture-2.svg\";\n\n//# sourceURL=webpack://bubble-bash-landing-page/./src/asset/ProjectPicture-2.svg?");
+eval("module.exports = __webpack_require__.p + \"src/images/a018bf87f74816ffb3e4..svg\";\n\n//# sourceURL=webpack://bubble-bash-landing-page/./src/asset/ProjectPicture-2.svg?");
 
 /***/ }),
 
@@ -126,7 +126,7 @@ eval("module.exports = __webpack_require__.p + \"images/ProjectPicture-2.svg\";\
   \****************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/ProjectPicture-3.svg\";\n\n//# sourceURL=webpack://bubble-bash-landing-page/./src/asset/ProjectPicture-3.svg?");
+eval("module.exports = __webpack_require__.p + \"src/images/7bb4d7c744bae74b9473..svg\";\n\n//# sourceURL=webpack://bubble-bash-landing-page/./src/asset/ProjectPicture-3.svg?");
 
 /***/ }),
 
@@ -136,7 +136,7 @@ eval("module.exports = __webpack_require__.p + \"images/ProjectPicture-3.svg\";\
   \****************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/ServicesBranding.svg\";\n\n//# sourceURL=webpack://bubble-bash-landing-page/./src/asset/ServicesBranding.svg?");
+eval("module.exports = __webpack_require__.p + \"src/images/167db378d8c1ec41fe3a..svg\";\n\n//# sourceURL=webpack://bubble-bash-landing-page/./src/asset/ServicesBranding.svg?");
 
 /***/ }),
 
@@ -146,7 +146,7 @@ eval("module.exports = __webpack_require__.p + \"images/ServicesBranding.svg\";\
   \************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/ServicesCode.svg\";\n\n//# sourceURL=webpack://bubble-bash-landing-page/./src/asset/ServicesCode.svg?");
+eval("module.exports = __webpack_require__.p + \"src/images/49d27c6a475e00adf771..svg\";\n\n//# sourceURL=webpack://bubble-bash-landing-page/./src/asset/ServicesCode.svg?");
 
 /***/ }),
 
@@ -156,7 +156,7 @@ eval("module.exports = __webpack_require__.p + \"images/ServicesCode.svg\";\n\n/
   \***************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/ServicesEditing.svg\";\n\n//# sourceURL=webpack://bubble-bash-landing-page/./src/asset/ServicesEditing.svg?");
+eval("module.exports = __webpack_require__.p + \"src/images/29b5be2ed03f7f47f279..svg\";\n\n//# sourceURL=webpack://bubble-bash-landing-page/./src/asset/ServicesEditing.svg?");
 
 /***/ }),
 
@@ -166,7 +166,7 @@ eval("module.exports = __webpack_require__.p + \"images/ServicesEditing.svg\";\n
   \*************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/ServicesFigma.svg\";\n\n//# sourceURL=webpack://bubble-bash-landing-page/./src/asset/ServicesFigma.svg?");
+eval("module.exports = __webpack_require__.p + \"src/images/60573b7498a143930706..svg\";\n\n//# sourceURL=webpack://bubble-bash-landing-page/./src/asset/ServicesFigma.svg?");
 
 /***/ }),
 
@@ -176,7 +176,7 @@ eval("module.exports = __webpack_require__.p + \"images/ServicesFigma.svg\";\n\n
   \**************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/ServicesMedium.svg\";\n\n//# sourceURL=webpack://bubble-bash-landing-page/./src/asset/ServicesMedium.svg?");
+eval("module.exports = __webpack_require__.p + \"src/images/a4daa0b49257e3e68c85..svg\";\n\n//# sourceURL=webpack://bubble-bash-landing-page/./src/asset/ServicesMedium.svg?");
 
 /***/ }),
 
@@ -186,7 +186,7 @@ eval("module.exports = __webpack_require__.p + \"images/ServicesMedium.svg\";\n\
   \***********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/ServicesPen.svg\";\n\n//# sourceURL=webpack://bubble-bash-landing-page/./src/asset/ServicesPen.svg?");
+eval("module.exports = __webpack_require__.p + \"src/images/7200a9c951dd63d5324f..svg\";\n\n//# sourceURL=webpack://bubble-bash-landing-page/./src/asset/ServicesPen.svg?");
 
 /***/ }),
 
@@ -196,7 +196,7 @@ eval("module.exports = __webpack_require__.p + \"images/ServicesPen.svg\";\n\n//
   \************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/facebookLogo.svg\";\n\n//# sourceURL=webpack://bubble-bash-landing-page/./src/asset/facebookLogo.svg?");
+eval("module.exports = __webpack_require__.p + \"src/images/f28994435f56b094ee31..svg\";\n\n//# sourceURL=webpack://bubble-bash-landing-page/./src/asset/facebookLogo.svg?");
 
 /***/ }),
 
@@ -206,7 +206,7 @@ eval("module.exports = __webpack_require__.p + \"images/facebookLogo.svg\";\n\n/
   \***********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/twitterLogo.svg\";\n\n//# sourceURL=webpack://bubble-bash-landing-page/./src/asset/twitterLogo.svg?");
+eval("module.exports = __webpack_require__.p + \"src/images/b473b0d9d6554a6cf444..svg\";\n\n//# sourceURL=webpack://bubble-bash-landing-page/./src/asset/twitterLogo.svg?");
 
 /***/ })
 
@@ -332,7 +332,7 @@ eval("module.exports = __webpack_require__.p + \"images/twitterLogo.svg\";\n\n//
 /******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
 /******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
 /******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
-/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 		__webpack_require__.p = scriptUrl + "../../";
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */

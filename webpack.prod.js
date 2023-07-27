@@ -6,8 +6,8 @@ module.exports = merge(config, {
   mode: "production",
   output: {
     path: path.resolve(__dirname, "production"),
-    filename: "[contenthash].bundle.js",
-    assetModuleFilename: "images/[hash][ext]",
+    filename: "src/js/[contenthash].bundle.js",
+    assetModuleFilename: "src/images/[hash].[ext]",
     clean: true,
   },
   optimization: {
@@ -15,7 +15,7 @@ module.exports = merge(config, {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "[name].[contenthash].css",
+      filename: "src/css/[name].[contenthash].css",
       chunkFilename: "[id].[contenthash].css",
     }),
   ],
